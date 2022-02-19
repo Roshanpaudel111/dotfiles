@@ -1,0 +1,13 @@
+/*******************************************************
+ * ROFI configs i3 powermenu for EndeavourOS
+ * Maintainer: joekamprad <joekamprad@endeavouros.com>
+ *******************************************************/
+configuration {
+    font:                           "Sourcecode Pro Regular 10";
+    show-icons:                     false;
+    icon-theme: 		    "Arc-X-D";
+    scroll-method:                  0;
+    disable-history:                false;
+    sidebar-mode: 		    false;
+}
+
