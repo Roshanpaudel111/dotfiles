@@ -7,20 +7,20 @@ window {
     border:                         0;
     padding:                        10;
     transparency:                   "real";
-    width:                          500px;
-    location:                       center;
+    width:                          200px;
+    location:                       east;
 /*y-offset:                       18;*/
 /*x-offset:	                    850;*/
     transparency:                   "real";
 }
 
 listview {
-    lines:                          10;
-    columns:                        2;
+    lines:                          5;
+    columns:                        1;
     scrollbar:                     false;
 }
 element {
-
+    border:  0;
     padding: 1px ;
 }
 element-text {
@@ -47,4 +47,19 @@ element.selected.urgent {
     background-color: @selected-urgent-background;
     text-color:       @selected-urgent-foreground;
 }
-
+element.selected.active {
+    background-color: #2bff79;
+    text-color:       #000000;
+}
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}

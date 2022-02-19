@@ -2,35 +2,32 @@
  * ROFI configs i3 powermenu for EndeavourOS
  * Maintainer: joekamprad <joekamprad@endeavouros.com>
  *******************************************************/
-
 configuration {
     font:                           "Sourcecode Pro Regular 10";
     show-icons:                     false;
-	icon-theme: 					"Arc-X-D";
+    icon-theme: 		    "Arc-X-D";
     scroll-method:                  0;
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
-	sidebar-mode: 					false;
+    sidebar-mode: 		    false;
 }
 
-@import "~/.config/rofi/arc_dark_colors.rasi"
-
+@import "~/.config/rofi/arc_dark_transparent_colors.rasi"
 
 window {
-    background-color:               @background;
+    background-color:            #1c1c1c;
     border:                         0;
     padding:                        10;
     transparency:                   "real";
-    width:                          170px;
+    width:                          120px;
     location:                       east;
-    /*y-offset:                       18;*/
-    /*x-offset:	                    850;*/
+/*y-offset:                       18;*/
+/*x-offset:	                    850;*/
     transparency:                   "real";
 }
 listview {
-    lines:                           4;
+    lines:                          6;
     columns:                        1;
+    scrollbar:                     false;
 }
 element {
     border:  0;
@@ -53,8 +50,8 @@ element.normal.active {
     text-color:       @active-foreground;
 }
 element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+    background-color: #00cfa5;
+    text-color:       #000000;
 }
 element.selected.urgent {
     background-color: @selected-urgent-background;
@@ -117,7 +114,8 @@ inputbar {
 }
 textbox-prompt-colon {
     expand:     false;
-    str:        "Set Power Profile:";
+    str:        ":";
     margin:     0px 0.3em 0em 0em ;
     text-color: @normal-foreground;
 }
+
