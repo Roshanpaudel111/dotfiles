@@ -195,8 +195,8 @@ bindsym F1 exec ~/.config/i3/scripts/keyhint-2
 # bindsym $mod+F1 exec xed ~/.config/i3/keybindings
 
 # Backlight control
-bindsym XF86MonBrightnessUp exec xbacklight +5 && notify-send "Brightness - ${$(xbacklight -get)%.*}%" 
-bindsym XF86MonBrightnessDown exec xbacklight -5 && notify-send "Brightness - ${$(xbacklight -get)%.*}%" 
+bindsym XF86MonBrightnessUp exec xbacklight +5 && notify-send "Brightness - $($(xbacklight -get)%.*)%" 
+bindsym XF86MonBrightnessDown exec xbacklight -5 && notify-send "Brightness - $($(xbacklight -get)%.*)%" 
 
 # change focus
 bindsym $mod+j focus left
@@ -287,8 +287,8 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 set $ws1 "1:"
 set $ws2 "2:"
 set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -462,13 +462,14 @@ set $grey		#b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
 set $myfavbg		#121212
+set $focused-border	#77b890
 
 # define colors for windows:
-#class		        	border		bground		text		indicator	child_border
-client.focused		    $lightblue	$darkblue	$white		$purple		$mediumgrey
-client.unfocused	    $darkblue	$darkblue	$grey		$purple		$darkgrey
-client.focused_inactive	    $darkblue	$darkblue	$grey		$purple		$black
-client.urgent		    $urgentred	$urgentred	$white		$purple		$yellowbrown
+#class		             border		 bground	text	       indicator		child_border
+client.focused		    $focused-border	$darkblue	$white		$focused-border		$focused-border
+client.unfocused	    $black		$darkblue	$grey		$grey			$darkgrey
+client.focused_inactive	    $black		$darkblue	$grey		$black			$black
+client.urgent		    $urgentred		$urgentred	$white		$yellowbrown		$yellowbrown
 
 ############################################
 # bar settings (input comes from i3blocks) #
