@@ -14,4 +14,4 @@
 
 # Note:
 Copy roshan.rasi to /usr/share/rofi/themes
-Then run ```rofi-theme-selector``` /n and select roshan 
+Then run ```rofi-theme-selector``` \ and select roshan 
