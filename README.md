@@ -1,4 +1,4 @@
-![demo](https://imgflip.com/gif/675elo)
+![demo](/demo.gif)
 
 # dotfiles
 
