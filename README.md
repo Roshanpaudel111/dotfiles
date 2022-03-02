@@ -13,5 +13,5 @@
 *Note: I have used fish shell in alacritty. If you use different shell then change the line of shell in alacritty.yml*
 
 # Note:
-Copy roshan.rasi to /usr/share/rofi/themes \n
+Copy roshan.rasi to /usr/share/rofi/themes <br />
 Then run ```rofi-theme-selector```and select roshan 
